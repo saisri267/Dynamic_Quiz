@@ -194,6 +194,8 @@ function forceSubmit() {
 
 // ================= RESULTS =================
 function showResult() {
+    fetch("track_exam.php");
+
     let score = 0;
     answers.forEach((a, i) => {
         if (a !== null && questions[i].o[a] === questions[i].a) score++;
