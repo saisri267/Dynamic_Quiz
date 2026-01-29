@@ -59,5 +59,3 @@ quiz_automation/screenshots/
 
 ```
 
----
-
