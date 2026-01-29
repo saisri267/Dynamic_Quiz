@@ -61,7 +61,7 @@ snap("TC4_Timer_Displayed")
 # ===================== TC5: NEXT WITHOUT OPTION =====================
 driver.find_element(By.ID, "nextBtn").click()
 time.sleep(0.5)
-snap("TC5_Next_Without_Option_Warning")
+snap("TC5_Next_button_Warning")
 
 # ===================== TC6: ANSWER Q1–Q9 RANDOM =====================
 for _ in range(9):
@@ -70,13 +70,13 @@ for _ in range(9):
     driver.find_element(By.ID, "nextBtn").click()
     time.sleep(0.15)
 
-snap("TC6_Answered_Questions_Green")
+snap("TC6_All_Answered")
 
 # ===================== TC7: SUBMIT ERROR (Q10 EMPTY) =====================
 submit_btn = driver.find_element(By.ID, "submitBtn")
 driver.execute_script("arguments[0].click();", submit_btn)
 time.sleep(0.6)
-snap("TC7_Submit_Error_Without_Answer")
+snap("TC7_Submit_Error")
 
 # ===================== FIX Q10 & SUBMIT =====================
 random_option()
